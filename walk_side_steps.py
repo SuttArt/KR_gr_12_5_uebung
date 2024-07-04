@@ -125,20 +125,20 @@ class Sprinter(Robot):
         #arm_swing    = 1.5
         
         ## 2. My own parameters (stable + speed ~0.24 min)
-        f            = 20
-        robot_height = 0.5
-        shift_y      = 0.11
-        step_height  = 0.6
-        step_length  = 0.35
-        arm_swing    = 1.4
-        
-        ## 3. My own parameters (Best speed, robot comes too close to the line ~0.21 min)
         #f            = 20
         #robot_height = 0.5
         #shift_y      = 0.11
         #step_height  = 0.6
-        #step_length  = 0.4
+        #step_length  = 0.35
         #arm_swing    = 1.4
+        
+        ## 3. My own parameters (Best speed, robot comes too close to the line ~0.21 min)
+        f            = 20
+        robot_height = 0.5
+        shift_y      = 0.11
+        step_height  = 0.6
+        step_length  = 0.4
+        arm_swing    = 1.4
 
 
         while self.step(self.timeStep) != -1:
